@@ -4,17 +4,35 @@
 }
 
 body {
-  background-color: #474e5d;
+  background-color: #F2F2FF;
   font-family: Helvetica, sans-serif;
 }
 
 .container {
   background-color: #474e5d;
+  max-width: 1000px;
+  border-radius: 10px;
+  height: 800px;
+  overflow: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+  background: orange;        /* color of the tracking area */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: green;    /* color of the scroll thumb */
+  border-radius: 30px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
 }
 
 h1 {
   text-align: center;
-  color:white;
+  color:black;
   font-size: 2rem;
   font-weight: bolder;
   padding: 20px;
