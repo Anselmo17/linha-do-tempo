@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { steps } from '../steps/mockSteps';
+import { ISteps } from 'src/app/Interface/ISteps';
 
 @Component({
   selector: 'app-steps',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StepsComponent implements OnInit {
 
+  steps: ISteps[] = [];
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.steps = steps;
   }
 
 }
