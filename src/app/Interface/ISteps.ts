@@ -1,5 +1,5 @@
 export interface ISteps {
-  ano: number,
-  lado: string,
-  mensagem: string,
+  ano: number;
+  lado: string;
+  mensagem: string;
 }
