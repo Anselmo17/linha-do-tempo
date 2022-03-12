@@ -3,17 +3,14 @@
   margin: 0 auto;
 }
 
-body {
-  background-color: #F2F2FF;
-  font-family: Helvetica, sans-serif;
-}
-
 .container {
   background-color: #474e5d;
   max-width: 1000px;
+  border: solid 5px rgb(235, 233, 233);
   border-radius: 10px;
   height: 800px;
-  overflow: auto;
+  overflow-y: auto;
+  padding: 40px;
 }
 
 .container::-webkit-scrollbar {
@@ -22,6 +19,8 @@ body {
 
 .container::-webkit-scrollbar-track {
   background: orange;        /* color of the tracking area */
+  border-radius: 50px;
+  padding: 80px;
 }
 
 .container::-webkit-scrollbar-thumb {
@@ -32,9 +31,9 @@ body {
 
 h1 {
   text-align: center;
-  color:black;
+  color:rgb(243, 237, 237);
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: 900;
   padding: 20px;
   margin-top: 15px;
   margin-bottom: 15px;

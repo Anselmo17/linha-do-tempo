@@ -11,7 +11,7 @@ body {
 .timeline {
   position: relative;
   max-width: 1200px;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -22,9 +22,13 @@ body {
   width: 6px;
   background-color: orange;
   top: 20px;
-  bottom: 20px;
+  bottom: calc(120px);
   left: 50%;
   margin-left: -3px;
+}
+
+.timeline::after{
+  background-color: orange;
 }
 
 /* Container around content */
@@ -97,7 +101,7 @@ body {
   padding: 20px 30px;
   background-color: white;
   position: relative;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
